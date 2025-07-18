@@ -107,6 +107,19 @@ ul {
     align-items: center;
       color: gray;
   }
+    <script>
+  function validatePhone() {
+    const phone = document.getElementById("phone").value;
+    const phonePattern = /^[0-9]{11}$/;
+
+    if (!phonePattern.test(phone)) {
+      alert("Please enter a valid 11-digit phone number.");
+      return false;
+    }
+    alert("Phone number is valid!");
+    return true;
+    }
+    </script>
  }
 portfolio {
      font-size: 100px;
