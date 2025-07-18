@@ -10,24 +10,6 @@
         background-color: gray;
         border-radius: 6px;
       }
-        form onsubmit="return validatePhone()">
-  <input type="text" id="phone" placeholder="Enter your phone number">
-  <button type="submit">Submit</button>
-</form>
-
-<script>
-  function validatePhone() {
-    const phone = document.getElementById("phone").value;
-    const phonePattern = /^[0-9]{11}$/;
-
-    if (!phonePattern.test(phone)) {
-      alert("Please enter a valid 11-digit phone number.");
-      return false;
-    }
-    alert("Phone number is valid!");
-    return true;
-  }
-</script>
     </style>
 </head>
 <style>
@@ -166,6 +148,13 @@ img {
    <p><a href="Portfolio.html" class="Nav-link spaced"><strong>Click to view: Portfolio</strong></a></p>
    <p><a href="services.html"><strong>Click here to view our services</strong></a></p>
       </ul>
+   <!-- Add phone validation form here -->
+  <form onsubmit="return validatePhone()">
+    <input type="text" id="phone" placeholder="Enter your phone number">
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Your other content -->
       <footer>
           <p>&copy; Templinks 2025. All rights reserved</p>
       </footer>
