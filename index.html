@@ -10,6 +10,29 @@
         background-color: gray;
         border-radius: 6px;
       }
+        Default styles (for larger screens) */
+body {
+  font-size: 18px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row; /* Items side by side on desktop */
+  gap: 20px;
+}
+
+/* Styles for screens 600px or smaller (phones) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column; /* Stack items vertically on phones */
+  }
+}
     </style>
 </head>
 <style>
