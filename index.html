@@ -174,7 +174,48 @@ img {
   <a href="profile.html" style="text-decoration: none; color: inherit;">
   <div class="profile-preview-card" style="background: #406c6c; padding: 20px; border-radius: 10px;">
   <img src="profile-pic.jpg" alt="my profile card" style="width:150px; border-radius: 50%;">
-    <h2>Your Name</h2>
+<head>
+  <title>Responsive Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .box {
+      flex: 1;
+      padding: 20px;
+      margin: 10px;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+    }
+
+    /* Responsive for screens smaller than 768px */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+  <h2>My Responsive Page</h2>
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+</body>
+</html>
+```
+      <h2>Your Name</h2>
     <p>Web Developer</p>
       <p>Click to view</p>
   </div>
