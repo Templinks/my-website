@@ -55,6 +55,16 @@ body {
     flex-direction: column; /* Stack items vertically on phones */
   }
 }
+    <title>DOM Example</title>
+    <h2 id="greeting">Welcome!</h2>
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+      function changeText({ 
+document.getElementById("greeting").innerText = "You clicked the button!";
+      }
+    </script>
+Let me know if you want to try a task with it now
     </style>
 </head>
     <style>
