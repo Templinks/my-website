@@ -258,7 +258,15 @@ img {
     <input type="text" id="phone" placeholder="Enter your phone number">
     <button type="submit">Submit</button>
   </form>
+    <title>DOM Manipulation</title>
+    <h2 id="greeting">Welcome to my website!</h2>
+    <button onclick="changeText()">Click Me</button>
 
+    <script>
+      function changeText() {
+        document.getElementById("greeting").innerText = "You clicked the button!";
+      }
+    </script>
   <!-- Your other content -->
       <footer>
           <p>&copy; Templinks 2025. All rights reserved</p>
